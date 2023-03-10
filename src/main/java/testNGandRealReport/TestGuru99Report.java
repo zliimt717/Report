@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-/*
+
 @Listeners(RealGuru99TimeReport.class)
 public class TestGuru99Report {
 
@@ -21,4 +21,4 @@ public class TestGuru99Report {
 
 
 }
-*/
+
