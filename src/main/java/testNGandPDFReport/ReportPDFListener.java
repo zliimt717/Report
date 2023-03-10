@@ -234,7 +234,7 @@ public class ReportPDFListener implements ITestListener {
         }
 
         // Exception Contents
-        /*Paragraph p = new Paragraph("EXCEPTIONS SUMMARY"
+        Paragraph p = new Paragraph("EXCEPTIONS SUMMARY"
                 , FontFactory.getFont(FontFactory.HELVETICA, 16, Font.BOLD, new Color(255, 0, 0)));
         try {
             document.add(p);
@@ -267,7 +267,7 @@ public class ReportPDFListener implements ITestListener {
                     e3.printStackTrace();
                 }
             }
-        }*/
+        }
         this.document.close();
      }
    }
