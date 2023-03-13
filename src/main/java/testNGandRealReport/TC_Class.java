@@ -41,6 +41,7 @@ public class TC_Class {
         Assert.assertTrue(driver.findElement(By.xpath(launchPageHeading)).isDisplayed(),
                 "Home Page heading is not displayed");
         System.out.println("Home Page heading is displayed");
+
     }
 
     /**
@@ -50,7 +51,12 @@ public class TC_Class {
     public void tc03EnterCredentials() throws InterruptedException {
         driver.findElement(By.xpath(userName_element)).sendKeys(userName_value);
         driver.findElement(By.xpath(password_element)).sendKeys(password_value);
-        Thread.sleep(5000);
+
+        Thread.sleep(1000);
+        driver.switchTo().frame("gdpr-consent-notice");
+        driver.findElement(By.id("save")).click();
+
+        driver.switchTo().defaultContent();
         driver.findElement(By.xpath(signIn_element)).click();
     }
 
